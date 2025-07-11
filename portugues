@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Julio Abreu Deckes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Cor de fundo suave */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #2c3e50; /* Azul escuro para o cabeçalho */
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db; /* Linha azul para destaque */
+            padding-bottom: 0.5rem;
+        }
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid #3498db;
+        }
+        .experience-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .experience-subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #555;
+            margin-top: 0.25rem;
+        }
+        .experience-date {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 0.25rem;
+        }
+        .list-item {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        .contact-link {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-link:hover {
+            color: #3498db;
+        }
+        .skill-badge {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Full rounded */
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .skill-badge:hover {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-8 md:p-12">
+        <!-- Cabeçalho -->
+        <header class="header rounded-t-xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Julio Abreu Deckes</h1>
+            <p class="text-xl md:text-2xl font-light mb-4">Editor, Diretor de Fotografia e Colorista</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-sm md:text-base">
+                <a href="mailto:julioabreudx@gmail.com" class="contact-link flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7m18 0A2 2 0 0020 6H4a2 2 0 00-2 2v7a2 2 0 002 2h16a2 2 0 002-2V8z" />
+                    </svg>
+                    julioabreudx@gmail.com
+                </a>
+                <span class="hidden md:inline-block">|</span>
+                <a href="https://www.linkedin.com/in/juliodex" target="_blank" rel="noopener noreferrer" class="contact-link flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    LinkedIn
+                </a>
+                <span class="hidden md:inline-block">|</span>
+                <a href="https://nachovisual.com/julio" target="_blank" rel="noopener noreferrer" class="contact-link flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Portfólio Pessoal
+                </a>
+            </div>
+        </header>
+
+        <main class="p-6 md:p-8">
+            <!-- Resumo -->
+            <section class="mb-8">
+                <h2 class="section-title">Resumo</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Profissional de audiovisual com experiência desde 1998, especializado em Edição, Direção de Fotografia, Colorismo e Motion Design. Sócio efetivo da ABC e AMC SP.
+                </p>
+            </section>
+
+            <!-- Principais Competências -->
+            <section class="mb-8">
+                <h2 class="section-title">Principais Competências</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge">Edição</span>
+                    <span class="skill-badge">Direção de Fotografia</span>
+                    <span class="skill-badge">Colorismo</span>
+                    <span class="skill-badge">Motion Design</span>
+                    <span class="skill-badge">Produção de Vídeos Musicais</span>
+                    <span class="skill-badge">Produção de Curtas-Metragens</span>
+                    <span class="skill-badge">Produção de Vídeos para Web</span>
+                </div>
+            </section>
+
+            <!-- Idiomas -->
+            <section class="mb-8">
+                <h2 class="section-title">Idiomas</h2>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="list-item">Português (Nativo/Bilíngue)</li>
+                    <li class="list-item">Inglês (Profissional Completo)</li>
+                    <li class="list-item">Espanhol (Profissional Completo)</li>
+                </ul>
+            </section>
+
+            <!-- Experiência Profissional -->
+            <section class="mb-8">
+                <h2 class="section-title">Experiência Profissional</h2>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Nacho Visual</h3>
+                    <p class="experience-subtitle">Fundador e Produtor Executivo</p>
+                    <p class="experience-date">Maio de 2010 – Presente (15 anos 3 meses)</p>
+                    <p class="text-gray-700">São Paulo e Região, Brasil</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Freelancer</h3>
+                    <p class="experience-subtitle">Diretor de Fotografia, Editor, Colorista e Motion Designer</p>
+                    <p class="experience-date">Julho de 2010 – Presente (15 anos 1 mês)</p>
+                    <p class="text-gray-700">São Paulo Area, Brazil</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li class="list-item">Prestou serviços para produtoras como Paranoid, SugarCane Films, Bossa Nova, Movieart, Spray Filmes.</li>
+                        <li class="list-item">Colaborou com agências como Africa, Almap, Artplan, Tech And Soul, entre outras.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Edelman Significa</h3>
+                    <p class="experience-subtitle">Account Supervisor, Videomaker, Editor, Colorista e Motion Designer</p>
+                    <p class="experience-date">Janeiro de 2014 – Dezembro de 2014 (1 ano)</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">SP Telefilm</h3>
+                    <p class="experience-subtitle">Finalizador e Editor Freelancer</p>
+                    <p class="experience-date">Janeiro de 2012 – Agosto de 2012 (8 meses)</p>
+                    <p class="text-gray-700">Trabalhou na série de 6 episódios "Meu Agente" para o canal E! Entertainment Television.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">BlueCanario Films</h3>
+                    <p class="experience-subtitle">Editor / Finalizador, Colorista e Motion Designer</p>
+                    <p class="experience-date">Março de 2011 – Junho de 2011 (4 meses)</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">BUSTV</h3>
+                    <p class="experience-subtitle">Editor</p>
+                    <p class="experience-date">Abril de 2009 – Agosto de 2010 (1 ano 5 meses)</p>
+                    <p class="text-gray-700">Responsável pela edição de programas veiculados nas TVs de ônibus.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Republika Filmes</h3>
+                    <p class="experience-subtitle">Assistente de Finalização e Motion Designer</p>
+                    <p class="experience-date">Abril de 2007 – Maio de 2009 (2 anos 2 meses)</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li class="list-item">Assistente de Finalização de publicidade para comerciais de Carlos Manga Jr. e Ivy Abujamra (clientes: Fiat, Toyota, Citroen, HSBC).</li>
+                        <li class="list-item">Motion Designer em vídeos da produtora (direção: Paula Manga; clientes: Embraer, Del Valle, Banco BNP Paribas).</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Freelancer</h3>
+                    <p class="experience-subtitle">Editor Freelancer</p>
+                    <p class="experience-date">Novembro de 2006 – Abril de 2007 (6 meses)</p>
+                    <p class="text-gray-700">São Paulo Area, Brazil</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li class="list-item">Prestou serviços para produtoras como Maria Bonita e Sentimental Filmes.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">VCA Filmes</h3>
+                    <p class="experience-subtitle">Editor</p>
+                    <p class="experience-date">Julho de 2006 – Outubro de 2006 (4 meses)</p>
+                    <p class="text-gray-700">Editor de Avid da campanha política para governador de André Puccinelli (PMDB de MS).</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">WN Produções</h3>
+                    <p class="experience-subtitle">Editor Freelancer</p>
+                    <p class="experience-date">Fevereiro de 2005 – Julho de 2006 (1 ano 6 meses)</p>
+                    <p class="text-gray-700">Principais trabalhos: Rally dos Sertões e Festival de Ópera de Belém.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Cabeca Amarela Videomaker</h3>
+                    <p class="experience-subtitle">Editor Freelancer</p>
+                    <p class="experience-date">Julho de 2004 – Julho de 2005 (1 ano 1 mês)</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">X-Virtual TV</h3>
+                    <p class="experience-subtitle">Editor e Diretor de Imagens</p>
+                    <p class="experience-date">Maio de 2002 – Julho de 2004 (2 anos 3 meses)</p>
+                    <p class="text-gray-700">Trabalhou no canal de turismo da NET.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">TV Jockey</h3>
+                    <p class="experience-subtitle">Operador de Câmera e Editor Linear</p>
+                    <p class="experience-date">Junho de 1998 – Abril de 2002 (3 anos 11 meses)</p>
+                </div>
+            </section>
+
+            <!-- Formação Acadêmica -->
+            <section>
+                <h2 class="section-title">Formação Acadêmica</h2>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Centro Universitário Senac</h3>
+                    <p class="experience-subtitle">Superior em Tecnologia em Produção Audiovisual com ênfase em Animação</p>
+                    <p class="experience-date">2011-2013</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Centro Cultural B_arco</h3>
+                    <p class="experience-subtitle">Direção de Fotografia para Cinema e TV Digital</p>
+                    <p class="experience-date">2016</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">DRC</h3>
+                    <p class="experience-subtitle">After Effects Avançado</p>
+                    <p class="experience-date">2006</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">SENAC SP</h3>
+                    <p class="experience-subtitle">Radialista Operador de Câmera</p>
+                    <p class="experience-date">2000-2001</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
