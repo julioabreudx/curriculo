@@ -15,12 +15,47 @@
         .job-entry:not(:last-child) {
             border-bottom: 1px solid #e5e7eb;
             padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem; /* Added for better visual spacing on screen */
+        }
+        
+        /* Print-specific styles for A4 layout */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                background-color: #ffffff !important;
+                font-size: 10pt;
+            }
+            .a4-container {
+                width: 100%;
+                max-width: 100%;
+                padding: 1cm;
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+            h1 { font-size: 22pt; }
+            h2 { font-size: 14pt; border-color: #ccc; }
+            h3 { font-size: 11pt; }
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+            .text-blue-600 {
+                 color: #000000 !important;
+            }
+            .bg-gray-100 {
+                background-color: #ffffff !important;
+            }
         }
     </style>
 </head>
 <body class="bg-gray-100">
 
-    <div class="max-w-4xl mx-auto p-6 sm:p-8 md:p-12 bg-white shadow-lg my-8 rounded-lg text-gray-800">
+    <div class="max-w-4xl mx-auto p-6 sm:p-8 md:p-12 bg-white shadow-lg my-8 rounded-lg text-gray-800 a4-container">
 
         <!-- Header -->
         <header class="text-center mb-10">
@@ -70,7 +105,7 @@
 
 
             <!-- Professional Experience -->
-            <section>
+            <section class="page-break-before">
                 <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Professional Experience</h2>
                 <div class="space-y-6">
                     <!-- Job Entry -->
